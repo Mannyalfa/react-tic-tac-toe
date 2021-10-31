@@ -27,10 +27,42 @@ const App = () => {
     itemArray.fill("empty", 0, 9);
   };
 
+  const checkIsWinner = () => {
+
+    // checking game winner
+
+    if (
+      itemArray[0] === itemArray[1] &&
+      itemArray[0] === itemArray[2] &&
+      itemArray[0] !== "empty"
+    ) {
+      setWinStatus('${itemArray[0]} Won');
+    } else if (
+      itemArray[3] !== "empty" &&
+      itemArray[3] === itemArray[4] &&
+      itemArray[4] === itemArray[5] 
+    ) {
+      setWinStatus('${itemArray[3]} Won');
+
+      
+    }
 
 
 
-  
+    }
+
+
+
+
+
+
+
+  }
+
+
+
+
+
 
 }
 
