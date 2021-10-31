@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 
 //import Icon.js file
 import Icon from "./Icon"
@@ -13,6 +13,30 @@ import 'boostrap/dist/css/bootstrap.css';
 
 //import local CSS
 import './App.css';
+
+const itemArray = new Array(9).fill("empty");
+
+const App = () => {
+
+  const [isCross, setIsCross] = useState(false)
+  const [winStatus, setWingStatus] = usState("");
+
+  const reloadGame = () => {
+    setIsCross(false);
+    setWinStatus("");
+    itemArray.fill("empty", 0, 9);
+  };
+
+
+
+
+  
+
+}
+
+
+
+}
 
 
 
